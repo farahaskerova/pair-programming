@@ -1,6 +1,38 @@
-.container {
-    width: 1170px;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
+        /* .container {
+            width: 1170px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+         */
+        
+        .boxes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            text-align: center;
+        }
+        
+        .box {
+            width: 250px;
+            height: 250px;
+            border: 1px solid red;
+            background-color: #f1f1f1;
+            margin: 10px;
+        }
+        
+        @media screen and (max-width: 762px) {
+            .boxes {
+                flex-direction: column;
+                width: 100%;
+                height: max-content;
+            }
+        }
+        
+        @media screen and (max-width: 992px) {
+            .boxes {
+                gap: 15px;
+                flex-wrap: wrap;
+                height: max-content;
+            }
+        }
